@@ -1,21 +1,99 @@
-<!-- Day Planner -->
+<!-- Code quiz -->
 <!DOCTYPE html>
+
 <html lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Day Planner</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-	</head>
-	<body>
-    	<script src="assets/js/script.js"></script>
-		<div id="navbar">
 
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         />
+      <link rel="stylesheet" href="assets/css/style.css" />         
+      <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
+      <title>Work Day Scheduler</title>
+   </head>
 
+   <body>
+      <header class="jumbotron">
+         <h1 class="display-4">Work Day Scheduler</h1>
+         <p class="lead">A simple calendar app for scheduling your work day</p>
+         <p id="currentDay" class="lead"></p>
+      </header>
 
+      <!--timeblocks-->
+      <div class="container">
+         <div class="row">
+            <div class="time-block time1">9:00 AM</div>
+            <textarea id="todo9" class= "description"></textarea>
+            <button id ="saveTodo1" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="time-block time2">10:00 AM</div>
+            <textarea id="todo10" class= "description"></textarea>
+            <button id ="saveTodo2" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="time-block time3">11:00 AM</div>
+            <textarea id="todo11" class= "description"></textarea>
+            <button id ="saveTodo3" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="time-block time4">12:00 PM</div>
+            <textarea id="todo12" class= "description"></textarea>
+            <button id ="saveTodo4" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="time-block time5">1:00 PM</div>
+            <textarea id="todo1" class= "description"></textarea>
+            <button id ="saveTodo5" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="time-block time6">2:00 PM</div>
+            <textarea id="todo2" class= "description"></textarea>
+            <button id ="saveTodo6" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="time-block time7">3:00 PM</div>
+            <textarea id="todo3" class= "description"></textarea>
+            <button id ="saveTodo7" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="time-block time8">4:00 PM</div>
+            <textarea id="todo4" class= "description"></textarea>
+            <button id ="saveTodo8" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="time-block time9">5:00 PM</div>
+            <textarea id="todo5" class= "description"></textarea>
+            <button id ="saveTodo9" class="saveButton">&#128190;</button>
+         </div>
+      </div>
+      <br>
+      <br>
 
-        </div>    
-	</body>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="assets/js/script.js"></script>
+   
+    </body>
+
 </html>
