@@ -2,17 +2,14 @@
 
 $(document).ready(function() {
 
-// populates current date when dom is loaded
+// Variables for date and time
 var dateParagraph = $("#currentDay");
 var todayDate = moment().format('dddd, MMMM Do YYYY');
 dateParagraph.text(todayDate);
 var currentTime = moment().format('H');
 currentTime = parseInt(currentTime);
 
-//Save buttons will save user inputs to local store and saved inputs will display in the textarea.
-//Getting the hours from the page and converting them into numbers.
-//Also getting each texarea.
-
+//Save buttons will save appointments to local storage and any that were previously saved will display in the textarea. Time and todo variables are set up here for the changeColor function below.
 var time1 = parseInt(09);
 var todo9 = $('.todo9').get(0);
 $(".todo9").val(localStorage.getItem("9:00"));
@@ -85,8 +82,7 @@ $(".saveTodo5").on("click", function() {
     localStorage.setItem("5:00", description);
 });
 
-
-//function that color codes the various time rows depending on current hour.
+//Function for changing appointment color based on the hour.
 var hours = [time1, time2, time3, time4, time5, time6, time7, time8, time9];
 var inputs = [todo9, todo10, todo11, todo12, todo1, todo2, todo3, todo4, todo5];
 function changeColor() {
